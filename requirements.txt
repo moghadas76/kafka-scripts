@@ -1,0 +1,5 @@
+kafka-python
+python-dotenv
+azure-storage-blob 
+azure-identity
+easydict
