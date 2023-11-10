@@ -25,7 +25,7 @@ logger.addHandler(file_hd)
 
 logger.info('os.environ["SASL_USERNAME"]: ' + os.environ["SASL_USERNAME"])
 conf = {
-    'bootstrap.servers': 'pkc-1wvvj.westeurope.azure.confluent.cloud:443',
+    'bootstrap.servers': os.environ["BOOTSTRAP_SERVER"],
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
     'sasl.username': os.environ["SASL_USERNAME"],
