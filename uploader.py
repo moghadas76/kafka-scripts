@@ -82,7 +82,7 @@ try:
                 Uploader.upload_files(dir)
                 with open(path_file, 'a') as f:
                     f.write(dir_name + "\n")
-        logger.info("Watching for new file...")
+        #logger.info("Watching for new file...")
     # Quickstart code goes here
 
 except Exception as ex:
