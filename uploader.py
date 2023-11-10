@@ -27,7 +27,7 @@ def is_date(s):
         return False
     
 def is_for_today(s):
-    return datetime.datetime.strptime(s, '%Y/%m/%d').date() < datetime.date.today()
+    return datetime.datetime.strptime(s, '%Y/%m/%d').date() == datetime.date.today()
 
 class Uploader:
 
