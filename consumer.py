@@ -43,7 +43,6 @@ TARGET_DIR = Path(os.environ["TARGET_DIR"])
 TARGET_DIR.mkdir(parents=True, exist_ok=True)
 
 conf = {
-    'group_id': 'vub_leandro_dibella',  # Any unique string will do
     'security_protocol': 'SASL_SSL',
     'sasl_mechanisms': 'PLAIN',
     'sasl_username': os.environ["SASL_USERNAME"],
@@ -53,7 +52,7 @@ conf = {
 }
 
 # consumer = Consumer(conf)
-consumer = KafkaConsumer('vehicle_count', bootstrap_servers=[os.environ["BOOTSTRAP_SERVER"]],
+consumer = KafkaConsumer('topic_name', bootstrap_servers=[os.environ["BOOTSTRAP_SERVER"]],
                          sasl_plain_username = conf["sasl_username"],
                          sasl_plain_password=conf["sasl_password"],
                          security_protocol = security_protocol,
