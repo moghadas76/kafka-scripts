@@ -74,7 +74,7 @@ try:
         cached_files = None
         with open(path_file, 'r') as f:
             cached_files = set(map(lambda item: item.strip(), f.readlines()))
-        logger.info(f"Cached files: {cached_files}, dirs: {dirs}")
+        #logger.info(f"Cached files: {cached_files}, dirs: {dirs}")
         for dir in dirs:
             dir_name = "/".join(dir.split("/")[-3:])
             if dir_name not in cached_files and not is_for_today(dir_name):
