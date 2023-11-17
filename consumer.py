@@ -43,7 +43,6 @@ TARGET_DIR = Path(os.environ["TARGET_DIR"])
 TARGET_DIR.mkdir(parents=True, exist_ok=True)
 
 conf = {
-    # 'bootstrap.servers': 'https://pkc-1wvvj.westeurope.azure.confluent.cloud:443',  # Your Kafka broker endpoint
     'group_id': 'vub_leandro_dibella',  # Any unique string will do
     'security_protocol': 'SASL_SSL',
     'sasl_mechanisms': 'PLAIN',
